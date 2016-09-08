@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="打开接收端"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/fillLight"
+            android:layout_alignTop="@+id/accept"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="补光"
+            android:textSize="19sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/fenge1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/fenge"
+
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/second"
+        android:layout_below="@+id/fenge1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/sige"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/aa"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="发送温度:"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/display"
+                android:layout_toRightOf="@+id/aa"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="40dp"
+                android:text="0℃"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/bb"
+                android:layout_below="@+id/aa"
+                android:layout_alignLeft="@+id/aa"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="50dp"
+                android:text="当前温度:"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/current"
+                android:layout_toRightOf="@+id/bb"
+                android:layout_alignTop="@+id/bb"
+
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:singleLine="true"
+                android:text="无"
+                android:textSize="23dp" />
+
+
+
+        </RelativeLayout>
+
+        <custom.VerticalSeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sige"
+            android:layout_alignTop="@+id/sige"
+            android:layout_alignBottom="@+id/sige"
+            android:layout_marginLeft="60dp"
+
+
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/fenge2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/fenge"
+
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/Third"
+        android:layout_below="@+id/fenge2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/sige2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/cc"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="发送光照:"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/display_2"
+                android:layout_toRightOf="@+id/cc"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="40dp"
+                android:text="0%"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/dd"
+                android:layout_below="@+id/cc"
+                android:layout_alignLeft="@+id/cc"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="50dp"
+                android:text="当前光照:"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/current_2"
+                android:layout_toRightOf="@+id/dd"
+                android:singleLine="true"
+                android:layout_alignTop="@+id/dd"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="无"
+                android:textSize="23dp" />
+
+
+
+        </RelativeLayout>
+
+        <custom.VerticalSeekBar
+            android:id="@+id/seekbar_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sige2"
+            android:layout_alignTop="@+id/sige2"
+            android:layout_alignBottom="@+id/sige2"
+            android:layout_marginLeft="60dp"
+
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
